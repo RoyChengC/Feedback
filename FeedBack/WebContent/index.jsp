@@ -16,7 +16,7 @@
 		<input id="upteainput"  name="file" type="file" value="导入文件" />
 		<button type="submit">导入</button>
 	</form:form>
-	<br>
+	<br><br>
 	<br>
 </body>
 </html>
