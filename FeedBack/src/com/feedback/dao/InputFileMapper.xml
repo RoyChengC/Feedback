@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.feedback.dao.InputFileMapper">
+
+    <insert id="inputTeacherIn" parameterType="java.util.Map" useGeneratedKeys="true" keyProperty="tino">
+        insert into teacherin (tino, tipsw, tiname, ico, title, tiprofession, tischolar,
+			ticome, birthyear, tischool, tioversea, tibackground, tiwork, tiscpaper,
+			titeapaper, tipatent, tisoft, tisp, tiprize, tireward, tiarch) 
+            values (#{tino}, #{tipsw}, #{tiname}, #{ico}, #{title}, #{tiprofession}, #{tischolar},
+            #{ticome}, #{birthyear}, #{tischool}, #{tioversea}, #{tibackground}, #{tiwork}, #{tiscpaper},
+            #{titeapaper}, #{tipatent}, #{tisoft}, #{tisp}, #{tiprize}, #{tireward}, #{tiarch})
+	</insert>
+	
+	<insert id="inputTeacherOut" parameterType="java.util.Map" useGeneratedKeys="true" keyProperty="tono">
+        insert into teacherout (ico, tono, toname, toinstitution, totype, toprofession, toscholar,
+			toyear, toschool, totech, towork, tolicense, topsw, totel) 
+            values (#{ico}, #{tono}, #{toname}, #{toinstitution}, #{totype}, #{toprofession}, #{toscholar},
+            #{toyear}, #{toschool}, #{totech}, #{towork}, #{tolicense}, #{topsw}, #{totel})
+	</insert>
+	
+	<insert id="inputTeacherSchool" parameterType="java.util.Map" useGeneratedKeys="true" keyProperty="tsno">
+        insert into teacherschool (ico, tsno, tsname, tstype, tsprofession, tsdepartment, tsscholar,
+			birthyear, tsschool, tsoversea, tsbackground, tswork, tsscpaper,
+			tspatent, tssoft, tssp, tsteapaper, tsprize, tsreward, tsarch, tspsw, tstel) 
+            values (#{ico}, #{tsno}, #{tsname}, #{tstype}, #{tsprofession}, #{tsdepartment}, #{tsscholar},
+            #{birthyear}, #{tsschool}, #{tsoversea}, #{tsbackground}, #{tswork}, #{tsscpaper}, #{tspatent},
+            #{tssoft}, #{tssp}, #{tsteapaper}, #{tsprize}, #{tsreward}, #{tsarch}, #{tspsw}, #{tstel})
+	</insert>
+	
+	<insert id="inputStudentInfo" parameterType="java.util.Map" useGeneratedKeys="true" keyProperty="sno">
+        insert into student (sno, sname, spsw, cnname, ico, status) values (#{sno}, #{sname}, #{spsw}, #{cnname},
+        	#{ico}, #{status})
+	</insert>
+	
+	<select id="getTeacherIn" parameterType="java.util.Map" resultType="TeacherIn">
+		select * from teacherin limit #{startRow}, #{rowCount}
+	</select>
+	
+	<select id="getTeacherOut" parameterType="java.util.Map" resultType="TeacherOut">
+		select * from teacherout limit #{startRow}, #{rowCount}
+	</select>
+	
+	<select id="getTeacherSchool" parameterType="java.util.Map" resultType="TeacherSchool">
+		select * from teacherschool limit #{startRow}, #{rowCount}
+	</select>
+	
+	<select id="queryTIMaxCount" resultType="int">
+		select count(tino) from teacherin
+	</select>
+	
+	<select id="queryTOMaxCount" resultType="int">
+		select count(tono) from teacherout
+	</select>
+	
+	<select id="queryTSMaxCount" resultType="int">
+		select count(tsno) from teacherschool
+	</select>
+</mapper>

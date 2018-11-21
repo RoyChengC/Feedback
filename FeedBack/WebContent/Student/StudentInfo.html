@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Dashboard">
+  <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+  <title>Dashio - Bootstrap Admin Template</title>
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Bootstrap core CSS -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!--external css-->
+  <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-responsive.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Template Name: Dashio
+    Template URL: https://templatemag.com/dashio-bootstrap-admin-template/
+    Author: TemplateMag.com
+    License: https://templatemag.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+  <section id="container">
+    <!-- **********************************************************************************************************************************************************
+        TOP BAR CONTENT & NOTIFICATIONS
+        *********************************************************************************************************************************************************** -->
+    <!--header start-->
+    <header class="header black-bg">
+      <div class="sidebar-toggle-box">
+        <div class="fa fa-bars tooltips" data-placement="right"></div>
+      </div>
+      <!--logo start-->
+      <a href="index.html" class="logo"><b>学生端</b></a>
+      <!--logo end-->
+      
+      <div class="top-menu">
+        <ul class="nav pull-right top-menu">
+          <li><a class="logout" href="login.html">退出</a></li>
+        </ul>
+      </div>
+    </header>
+    <!--header end-->
+    <!-- **********************************************************************************************************************************************************
+        MAIN SIDEBAR MENU
+        *********************************************************************************************************************************************************** -->
+    <!--sidebar start-->
+    <aside>
+      <div id="sidebar" class="nav-collapse ">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+          <p class="centered"><a href="profile.html"><img src="img/ui-sam.jpg" class="img-circle" width="80"></a></p>
+          <h5 class="centered">小红</h5>
+          
+          <li class="mt">
+            <a  class="active"  href="StudentInfo.html">
+              <i class="fa fa-dashboard"></i>
+              <span>个人信息</span>
+              </a>
+          </li>
+		  <li class="mt">
+             <a  href="MsgSubmit.html">
+              <i class="fa fa-envelope"></i>
+              <span>提交反馈</span>
+              </a>
+          </li>
+		  <li class="mt">
+            <a  href="MsgSubmit.html">
+              <i class="fa fa-envelope"></i>
+              <span>查看反馈回复</span>
+              </a>
+          </li>
+		  
+          
+          
+        </ul>
+        <!-- sidebar menu end-->
+      </div>
+    </aside>
+        <!--sidebar end-->
+    <!-- **********************************************************************************************************************************************************
+        MAIN CONTENT
+        *********************************************************************************************************************************************************** -->
+    <!--main content start-->
+    <section id="main-content">
+      <section class="wrapper site-min-height">
+        <div class="row mt">
+          <div class="col-lg-12">
+            <div class="row content-panel">
+              <div class="col-md-4 profile-text mt mb centered">
+                <div class="right-divider hidden-sm hidden-xs">
+                  <h4>院系</h4>
+                  <h5>软件学院</h5>
+                  <h4>专业</h4>
+                  <h5>软件工程</h5>
+                  <h4>班级</h4>
+                  <h5>2016级3班</h5>
+                </div>
+              </div>
+              <!-- /col-md-4 -->
+              <div class="col-md-4 profile-text">
+                <h3>学生姓名</h3>
+                <h6>学号：555555555</h6>
+                <p>学生的个人简介，主要包括个人信息、个人爱好、个人特长等内容。</p>
+                <br>
+                <!--
+                <p><button class="btn btn-theme"><i class="fa fa-envelope"></i> Send Message</button></p>
+                -->
+              </div>
+              <!-- /col-md-4 -->
+              <div class="col-md-4 centered">
+                <div class="profile-pic">
+                  <p><img src="img/ui-sam.jpg" class="img-circle"></p>
+                  <!--
+                  <p>
+                    <button class="btn btn-theme"><i class="fa fa-check"></i> Follow</button>
+                    <button class="btn btn-theme02">Add</button>
+                  </p>
+                  -->
+                </div>
+              </div>
+              <!-- /col-md-4 -->
+            </div>
+            <!-- /row -->
+          </div>
+          <!-- /col-lg-12 -->
+          <div class="col-lg-12 mt">
+            <div class="row content-panel">
+              <div class="panel-heading">
+                <ul class="nav nav-tabs nav-justified">
+                  <li class="active">
+                    <a data-toggle="tab" href="#edit">个人信息</a>
+                  </li>
+                  <li>
+                    <a data-toggle="tab" href="#contact" class="contact-map">学籍信息</a>
+                  </li>
+
+                </ul>
+              </div>
+              <!-- /panel-heading -->
+              <div class="panel-body">
+                <div class="tab-content">
+                    <div id="edit" class="tab-pane active">
+                      <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2 detailed">
+                          <h4 class="mb">基本信息</h4>
+                          <form role="form" class="form-horizontal">
+                            <div class="form-group">
+                              <label class="col-lg-2 control-label"> 个人头像</label>
+                              <div class="profile-pic">
+                                <p><img src="img/ui-sam.jpg" class="img-circle"></p>
+                              </div>
+                              <div class="col-lg-6">
+                                <input type="file" id="exampleInputFile" class="file-pos">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="col-lg-2 control-label">姓名</label>
+                              <div class="col-lg-6">
+                                <input type="text" placeholder=" " id="c-name" class="form-control" value="张三">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="col-lg-2 control-label">学号</label>
+                              <div class="col-lg-6">
+                                <input type="text" placeholder=" " id="lives-in" class="form-control" value="2016215256">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="col-lg-2 control-label">性别</label>
+                              <div class="col-lg-6">
+                                男<input type="radio" name="sex" value="male" class="form-control" checked>
+                                女<input type="radio" name="sex" value="female" class="form-control">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="col-lg-2 control-label">个人简介</label>
+                              <div class="col-lg-10">
+                                <textarea rows="10" cols="30" class="form-control" id="" name="">学生的个人简介，主要包括个人信息、个人爱好、个人特长等内容。</textarea>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="col-lg-8 col-lg-offset-2 detailed mt">
+                          <h4 class="mb">详细信息</h4>
+                          <form role="form" class="form-horizontal">
+                            <div class="form-group">
+                              <label class="col-lg-2 control-label">籍贯</label>
+                              <div class="col-lg-6">
+                                <input type="text" placeholder=" " id="addr1" class="form-control" value="中国">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="col-lg-2 control-label">家庭住址</label>
+                              <div class="col-lg-6">
+                                <input type="text" placeholder=" " id="addr2" class="form-control" value="中国">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="col-lg-2 control-label">联系电话</label>
+                              <div class="col-lg-6">
+                                <input type="text" placeholder=" " id="phone" class="form-control" value="11111111111">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="col-lg-2 control-label">Email</label>
+                              <div class="col-lg-6">
+                                <input type="text" placeholder=" " id="email" class="form-control" value="11111111@1111.com">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <div class="col-lg-offset-2 col-lg-10">
+                                <button class="btn btn-theme" type="submit">保存</button>
+                                <button class="btn btn-theme04" type="button">清空</button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                        <!-- /col-lg-8 -->
+                      </div>
+                      <!-- /row -->
+                    </div>
+                    <!-- /tab-pane -->
+                  <div id="contact" class="tab-pane">
+                    <div class="row">
+                      <div class="col-lg-8 col-lg-offset-2 detailed">
+                        <h4 class="mb">基本信息</h4>
+                        <form role="form" class="form-horizontal">
+                          <div class="form-group">
+                            <label class="col-lg-2 control-label">所属学院</label>
+                            <div class="col-lg-6">
+                              <input type="text" placeholder=" " id="c-name" class="form-control" value="软件学院">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="col-lg-2 control-label">学历层次</label>
+                            <div class="col-lg-6">
+                              <input type="text" placeholder=" " id="lives-in" class="form-control" value="本科">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="col-lg-2 control-label">年级</label>
+                            <div class="col-lg-6">
+                              <input type="text" placeholder=" " id="lives-in" class="form-control" value="2016">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="col-lg-2 control-label">专业</label>
+                            <div class="col-lg-6">
+                              <input type="text" placeholder=" " id="lives-in" class="form-control" value="软件工程">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="col-lg-2 control-label">年级</label>
+                            <div class="col-lg-6">
+                              <input type="text" placeholder=" " id="lives-in" class="form-control" value="2016">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="col-lg-2 control-label">班级</label>
+                            <div class="col-lg-6">
+                              <input type="text" placeholder=" " id="lives-in" class="form-control" value="3班">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="col-lg-offset-2 col-lg-10">
+                              <button class="btn btn-theme" type="submit">保存</button>
+                              <button class="btn btn-theme04" type="button">清空</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <!-- /col-lg-8 -->
+                    </div>
+                    <!-- /row -->
+                  </div>
+                  <!-- /tab-pane -->
+                  
+                </div>
+                <!-- /tab-content -->
+              </div>
+              <!-- /panel-body -->
+            </div>
+            <!-- /col-lg-12 -->
+          </div>
+          <!-- /row -->
+        </div>
+        <!-- /container -->
+      </section>
+      <!-- /wrapper -->
+    </section>
+    <!-- /MAIN CONTENT -->
+    <!--main content end-->
+    <!--footer start-->
+    
+    <!--footer end-->
+  </section>
+  <!-- js placed at the end of the document so the pages load faster -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script class="include" type="text/javascript" src="lib/jquery.dcjqaccordion.2.7.js"></script>
+  <script src="lib/jquery.scrollTo.min.js"></script>
+  <script src="lib/jquery.nicescroll.js" type="text/javascript"></script>
+  <!--common script for all pages-->
+  <script src="lib/common-scripts.js"></script>
+  <!--script for this page-->
+  <!-- MAP SCRIPT - ALL CONFIGURATION IS PLACED HERE - VIEW OUR DOCUMENTATION FOR FURTHER INFORMATION -->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+  <script>
+    $('.contact-map').click(function() {
+
+      //google map in tab click initialize
+      function initialize() {
+        var myLatlng = new google.maps.LatLng(40.6700, -73.9400);
+        var mapOptions = {
+          zoom: 11,
+          scrollwheel: false,
+          center: myLatlng,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+        var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title: 'Dashio Admin Theme!'
+        });
+      }
+      google.maps.event.addDomListener(window, 'click', initialize);
+    });
+  </script>
+</body>
+
+</html>
